@@ -1,11 +1,19 @@
 {
   "name": "brasil-api-promise",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guhcostan/brasil-api-promisse.git"
+  },
+  "author": "guhcostan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guhcostan/brasil-api-promisse/issues"
+  },
+  "homepage": "https://github.com/guhcostan/brasil-api-promisse#readme"
 }
