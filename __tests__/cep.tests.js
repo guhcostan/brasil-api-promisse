@@ -6,13 +6,13 @@ beforeAll(() => {
 
 it('should get cep data', () => {
     const spy = jest.spyOn(global.console, 'error')
-    return fetchCep('37202506').then(response => {
+    return fetchCep('05010000').then(response => {
         expect(response).toStrictEqual({
-            "cep": "37202506",
-            "city": "Lavras",
-            "neighborhood": "Vila Brasília",
-            "state": "MG",
-            "street": "Avenida Doutor Sílvio Menicucci"
+            "cep": "05010000",
+            "state": "SP",
+            "city": "São Paulo",
+            "neighborhood": "Perdizes",
+            "street": "Rua Caiubi"
         })
         expect(spy).not.toHaveBeenCalled()
     })
