@@ -20,13 +20,13 @@ Para instalar a lib é nescessario instala-la
 ### Buscar cep - fetchCep
 
 ```javascript
-    import { fetchCep } from 'brasil-api-promise'
-    
-    fetchCep('05010000').then(response => {
-        console.log(response)
-    }).catch(error => {
-        console.error(error)
-    })
+import { fetchCep } from 'brasil-api-promise'
+
+fetchCep('05010000').then(response => {
+    console.log(response)
+}).catch(error => {
+    console.error(error)
+})
 ```
 
 #### Sucesso
