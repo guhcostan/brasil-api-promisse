@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./logo.gif"> Brasil API Promise</h1>
+<div align="center"><img src="./logo.gif"> <h1>Brasil API Promise</h1></div>
 
 <div align="center">
   <p>
