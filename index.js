@@ -5,7 +5,9 @@ export const fetchCep = async (cep) => {
    const json = await jsonPromisse.json()
    const error = json.errors && json.errors.length > 0
    if (error) {
-      throw json.message
+      throw {
+         message: json.message
+      }
    }
    return json
 }

@@ -21,7 +21,9 @@ it('should get cep data', () => {
 it('should not get cep data', () => {
     const spy = jest.spyOn(global.console, 'error')
     return fetchCep('12345678').catch(e => {
-        expect(e).toBe('Todos os serviços de CEP retornaram erro.')
+        expect(e).toStrictEqual({
+            message: 'Todos os serviços de CEP retornaram erro.'
+        })
         expect(spy).not.toHaveBeenCalled()
     })
 })
