@@ -1,9 +1,11 @@
 const CEP_API = 'https://brasilapi.com.br/api/cep/v1/'
 
-export const fetchCep = (cep) => {
-   try {
-      return fetch(CEP_API + cep).then(response => response.json())
-   } catch(e){
-      return e
+export const fetchCep = async (cep) => {
+   const jsonPromisse = await fetch(CEP_API + cep)
+   const json = await jsonPromisse.json()
+   const error = json.errors && json.errors.length > 0
+   if (error) {
+      throw json.message
    }
+   return json
 }
