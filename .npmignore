@@ -3,3 +3,4 @@ __tests__/
 .gitignore
 logo.gif
 README.md
+.idea/
