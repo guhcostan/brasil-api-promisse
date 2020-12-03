@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "jest",
+    "covarage": "jest --collectCoverage"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/guhcostan/brasil-api-promisse/issues"
   },
-  "homepage": "https://github.com/guhcostan/brasil-api-promisse#readme"
+  "homepage": "https://github.com/guhcostan/brasil-api-promisse#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "node-fetch": "^2.6.1",
+    "@babel/runtime": "^7.12.5"
+  }
 }
